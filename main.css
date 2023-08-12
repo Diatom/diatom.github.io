@@ -22,7 +22,7 @@ body {
   grid-template-columns: 2fr 1fr;
   grid-template-rows: auto 1fr auto;
   grid-row-gap: 1em;
-  width: 1024px;
+  max-width: 1024px;
 }
 
 header {
@@ -98,6 +98,15 @@ main img {
   width: 200px;
 }
 
+@media (max-width: 1024px) {
+  main {
+    display: none;
+  }
+  article {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
 .active, .btn:hover {
   border-bottom: 2px solid #80e1ff;
 }

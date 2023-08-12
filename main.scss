@@ -1,0 +1,109 @@
+$primary-color: black;
+$primary-color-content: #000000;
+
+%margin-padding {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  background-size: cover;
+  color: $primary-color;
+  display: grid;
+  justify-content: center; 
+}
+
+a[href] {
+  color: $primary-color;
+}
+
+
+body {
+  background-size: cover;
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-row-gap: 1em;
+  @extend %margin-padding;
+  width: 1024px;
+}
+
+header {
+  grid-row: 1;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  width: 100%;
+  justify-content: start;
+  display: grid;
+  
+  nav {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  a {
+    float: left;
+    display: inline-block;
+    font-size: 1.4em;
+    font-weight: bold;
+    margin: 0;
+    padding: 1.2em;
+  }
+  a:hover {
+    background-color: #e6f9ff;
+  }
+  a[href] {
+    color: #0059b3;
+    text-decoration: none;
+  }
+}
+
+article {
+  grid-row: 2;
+  grid-column: 1;
+  margin: 0;
+  padding: 0 1.5em;
+
+  p {
+  }
+  ul {
+    list-style-type: circle;
+    padding-left: 18px;
+  }
+  li {
+    margin: 1em 0 1em 0;
+    padding: 0;
+  }
+  a[href] {
+    text-decoration: underline dotted #FF3028 1px;
+  }
+}
+
+h1 {
+  display: block;
+  margin: 3vh 0 0 0;
+  padding: 0;
+}
+
+footer {
+  grid-row: 3;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  text-align: center;
+  font-size: 12px;
+  padding: 20px 0 20px 0;
+  color: $primary-color;
+}
+
+main {
+  grid-row: 2;
+  grid-column: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.active, .btn:hover {
+  border-bottom: 2px solid #80e1ff;
+}

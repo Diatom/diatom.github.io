@@ -27,7 +27,7 @@ body {
   grid-template-rows: auto 1fr auto;
   grid-row-gap: 1em;
   @extend %margin-padding;
-  max-width: 1024px;
+  width: 1024px;
 }
 
 header {
@@ -110,6 +110,7 @@ main {
 
 @media (max-width: 1024px) {
   main {display: none;}
+  body {width: 100%;}
   article {grid-column-start: 1; grid-column-end: 3;}
 }
 

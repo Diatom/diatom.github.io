@@ -22,7 +22,7 @@ body {
   grid-template-columns: 2fr 1fr;
   grid-template-rows: auto 1fr auto;
   grid-row-gap: 1em;
-  max-width: 1024px;
+  width: 1024px;
 }
 
 header {
@@ -101,6 +101,9 @@ main img {
 @media (max-width: 1024px) {
   main {
     display: none;
+  }
+  body {
+    width: 100%;
   }
   article {
     grid-column-start: 1;

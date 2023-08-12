@@ -94,6 +94,9 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+main img {
+  width: 120px;
+}
 
 .active, .btn:hover {
   border-bottom: 2px solid #80e1ff;

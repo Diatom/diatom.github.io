@@ -58,7 +58,9 @@ main {
   padding: 0 1.5em;
   display: flex;
   img {
-  width: 300px;
+  display: block;
+  width: 200px;
+  height: auto;
   padding-top: 1.5em;
   }
 }
@@ -105,7 +107,7 @@ article {
 
 @media (max-width: 1024px) {
   html {margin-left: 0;}
-  img {display: none;}
+  div {display: none;}
   body {width: 100%}
   main { }
 }

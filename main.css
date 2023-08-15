@@ -36,6 +36,7 @@ header a {
   font-weight: bold;
   margin: 0;
   padding: 1.2em;
+  border-bottom: 2px solid hsla(0, 0%, 0%, 0);
 }
 header a:hover {
   background-color: #e6f9ff;
@@ -109,6 +110,6 @@ article a[href] {
     width: 100%;
   }
 }
-.active, .btn:hover {
+.btn:hover {
   border-bottom: 2px solid #80e1ff;
 }

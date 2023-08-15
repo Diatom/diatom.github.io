@@ -43,6 +43,7 @@ header {
     font-weight: bold;
     margin: 0;
     padding: 1.2em;
+    border-bottom: 2px solid hsla(0, 0%, 0%, 0);
   }
   a:hover {
     background-color: #e6f9ff;
@@ -112,6 +113,6 @@ article {
   main { }
 }
 
-.active, .btn:hover {
+.btn:hover {
   border-bottom: 2px solid #80e1ff;
 }

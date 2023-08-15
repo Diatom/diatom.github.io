@@ -8,81 +8,88 @@
 	<link rel="stylesheet" href="/main.css">
   <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
   <script src="https://kit.fontawesome.com/de585b8ed3.js" crossorigin="anonymous"></script>
+  <script src="myscript.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script>
+    function show(shown, hidden) {
+      document.getElementById(shown).style.display='flex';
+      document.getElementById(hidden).style.display='none';
+    return false;
+  }
+  </script>
 </head>
 
 <body>
     <header id="heads">
-      <nav id="myDIV">
-        <a class="btn active" href="/index.html">обзор</a>
-        <a class="btn" href="/contacts.html">контакты</a>
+      <nav>
+        <a class="btn active" href="#" onclick="return show('Page 1', 'Page 2')">обзор</a>
+        <a class="btn" href="#" onclick="return show('Page 2', 'Page 1')">контакты</a>
       </nav>
     </header>
-    <article>
-      <h1 id="about"><i class="fa fa-hashtag" aria-hidden="true"></i><a href="#about">Обо мне</a></h1>
-      <p>Приветствую, вы на моём личном сайте.</p>
-      <p>Меня зовут Севери́н Богучарский.</p>
-      <p>Здесь кратко представлены мои навыки и опыт работы.</p>
-      <h1 id="hard skills"><i class="fa fa-hashtag" aria-hidden="true"></i><a href="#hard skills">Основные навыки</a></h1>
-      <p>Умение организовать свой рабочий процесс.</p>
-      <p>Планирование работы команд для разработки продукта (Agille, Waterfall).</p>
-      <p>Разработка программ, структур для обучения персонала в сфере продаж, <br>
-       управления и мотивации (очные тренинги и электронные курсы).</p>
-      <p>Разработка курсов обучения персонала.</p>
-      <p>Проектная работа (постановка производства, обучение персонала, планирование).</p>
-      <p>Составление и ведение плана производства.</p>
-      <p>Составление анализа и отчётов по проведённому обучению, сертификации, проектной работе.</p>
-      <p>Навыки графического дизайна.</p>
-      <p>Владение инструментами:</p>
-      <ul>
-        <li>Adobe Photoshop.</li>
-        <li>Adobe Illustrator.</li>
-        <li>MS Power Point.</li>
-        <li>MS Excel.</li>
-        <li>iSpring.</li>
-        <li>HTML (базовые навыки).</li>
-        <li>CSS (базовые навыки).</li>
-        <li>Java Script, Go (общее представление).</li>
-      </ul>
-      <h1 id="soft skills"><i class="fa fa-hashtag" aria-hidden="true"></i><a href="#soft skills">Дополнительные навыки</a></h1>
-      <p>Умению вести переговоры с заказчиком и исполнителем.</p>
-      <p>Умение поддержать беседу.</p>
-      <p>Опыт наставничества.</p>
-      <p>Умение обучить коллег ремеслу (обучение вести молочное производство — от уборки до соблюдения технологий).</p>
-      <p>Умение вести деловую переписку.</p>
-      <h1 id="courses"><i class="fa fa-hashtag" aria-hidden="true"></i><a href="#courses">Разработка курсов обучения</a></h1>
-      <p>В разработке курсов опираюсь на следующие принципы:</p>
-      <ul>
-        <li>Получение вводных данных.</li>
-        <li>Разработка структуры.</li>
-        <li>Разработка материалов.</li>
-        <li>Согласование материалов.</li>
-        <li>Проведение тестового обучения.</li>
-        <li>Сбор обратной связи.</li>
-        <li>Внесение корректировок и релиз.</li>
-      </ul>
-    </article>
-    <main>
+    <main id='Page 1'>
+      <article>
+        <h1 id="about"><i class="fa fa-hashtag" aria-hidden="true"></i><a href="#about">Обо мне</a></h1>
+        <p>Приветствую, вы на моём личном сайте.</p>
+        <p>Меня зовут Севери́н Богучарский.</p>
+        <p>Здесь кратко представлены мои навыки и опыт работы.</p>
+        <h1 id="hard skills"><i class="fa fa-hashtag" aria-hidden="true"></i><a href="#hard skills">Основные навыки</a></h1>
+        <p>Умение организовать свой рабочий процесс.</p>
+        <p>Планирование работы команд для разработки продукта (Agille, Waterfall).</p>
+        <p>Разработка программ, структур для обучения персонала в сфере продаж, <br>
+         управления и мотивации (очные тренинги и электронные курсы).</p>
+        <p>Разработка курсов обучения персонала.</p>
+        <p>Проектная работа (постановка производства, обучение персонала, планирование).</p>
+        <p>Составление и ведение плана производства.</p>
+        <p>Составление анализа и отчётов по проведённому обучению, сертификации, проектной работе.</p>
+        <p>Навыки графического дизайна.</p>
+        <p>Владение инструментами:</p>
+        <ul>
+          <li>Adobe Photoshop.</li>
+          <li>Adobe Illustrator.</li>
+          <li>MS Power Point.</li>
+          <li>MS Excel.</li>
+          <li>iSpring.</li>
+          <li>HTML (базовые навыки).</li>
+          <li>CSS (базовые навыки).</li>
+          <li>Java Script, Go (общее представление).</li>
+        </ul>
+        <h1 id="soft skills"><i class="fa fa-hashtag" aria-hidden="true"></i><a href="#soft skills">Дополнительные навыки</a></h1>
+        <p>Умению вести переговоры с заказчиком и исполнителем.</p>
+        <p>Умение поддержать беседу.</p>
+        <p>Опыт наставничества.</p>
+        <p>Умение обучить коллег ремеслу (обучение вести молочное производство — от уборки до соблюдения технологий).</p>
+        <p>Умение вести деловую переписку.</p>
+        <h1 id="courses"><i class="fa fa-hashtag" aria-hidden="true"></i><a href="#courses">Разработка курсов обучения</a></h1>
+        <p>В разработке курсов опираюсь на следующие принципы:</p>
+        <ul>
+          <li>Получение вводных данных.</li>
+          <li>Разработка структуры.</li>
+          <li>Разработка материалов.</li>
+          <li>Согласование материалов.</li>
+          <li>Проведение тестового обучения.</li>
+          <li>Сбор обратной связи.</li>
+          <li>Внесение корректировок и релиз.</li>
+        </ul>
+      </article>
       <img src="images/severin.jpg" alt="Severin">
+    </main>
+    <main id="Page 2" style="display:none;">
+      <article>
+        <h1 id="contact"><i class="fa fa-hashtag" aria-hidden="true"></i><a href="#contact">Контакты</a></h1>
+        <p><i class="fa fa-phone" aria-hidden="true"></i> Телефон: <a href="tel:8-903-186-93-32">+7(903)186-93-32</a></p>
+        <p><i class="fa-solid fa-at"></i> Эл. почта: <a href="mailto: bogucharskiy.s@yandex.ru">bogucharskiy.s@yandex.ru</a></p>
+        <p><i class="fa fa-telegram" aria-hidden="true"></i> Telegram: <a href="https://telegram.me/Severinz">@Severinz</a></p>
+        <p><i class="fa-brands fa-discord"></i></i> Discord: <a href="https://discord.com/users/214732781945618442">@diatom.</a></p>
+        <h1 id="links"><i class="fa fa-hashtag" aria-hidden="true"></i><a href="#links">Ссылки</a></h1>
+        <p><i class="fa-solid fa-file"></i> HeadHunter: <a href="https://hh.ru/resume/796dbae3ff0577aafe0039ed1f535a4d737134">резюме</a></p>
+        <p><i class="fa fa-github" aria-hidden="true"></i> GitHub: <a href="https://github.com/Diatom/">Diatom</a></p>
+      </article>
     </main>
     <footer>
       © 2023. Сделал
       <a href="https://github.com/Diatom/ ">Severin B.</a>
     </footer>
-
-<script>
-var header = document.getElementById("myDIV");
-var btns = header.getElementsByClassName("btn");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
-  var current = document.getElementsByClassName("active");
-  current[0].className = current[0].className.replace(" active", "");
-  this.className += " active";
-  });
-}
-</script>
-
 </body>
 </html>

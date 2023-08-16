@@ -59,10 +59,6 @@ main img {
   border: 1px solid #8c8c8c;
 }
 
-.page1 {
-  flex-direction: row-reverse;
-}
-
 h1 {
   display: block;
   margin: 3vh 0 0 0;
@@ -99,12 +95,20 @@ article a[href] {
   text-decoration: underline dotted #FF3028 1px;
 }
 
+.page1 {
+  flex-direction: row-reverse;
+}
+
+.btn:hover {
+  border-bottom: 2px solid #80e1ff;
+}
+
 @media (max-width: 1400px) {
   html {
     margin-left: 10vh;
   }
 }
-@media (max-width: 1024px) {
+@media (max-width: 800px) {
   html {
     margin-left: 0;
   }
@@ -114,7 +118,7 @@ article a[href] {
   main {
     flex-direction: column;
   }
-}
-.btn:hover {
-  border-bottom: 2px solid #80e1ff;
+  .page1 {
+    flex-direction: column;
+  }
 }

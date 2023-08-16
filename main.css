@@ -55,7 +55,12 @@ main img {
   display: block;
   width: 200px;
   height: auto;
-  padding-top: 1.5em;
+  margin-top: 1.5em;
+  border: 1px solid #8c8c8c;
+}
+
+.page1 {
+  flex-direction: row-reverse;
 }
 
 h1 {
@@ -103,11 +108,11 @@ article a[href] {
   html {
     margin-left: 0;
   }
-  div {
-    display: none;
-  }
   body {
     width: 100%;
+  }
+  main {
+    flex-direction: column;
   }
 }
 .btn:hover {

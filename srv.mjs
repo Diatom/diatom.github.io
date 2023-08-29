@@ -3,7 +3,7 @@ import * as hd from 'https://cdn.jsdelivr.net/npm/@mitranim/js@0.1.19/http_deno.
 
 const srv = new class Srv extends hd.Srv {
   dirs = hd.Dirs.of(
-    hd.dirRel(`.`, /[.](?:html|css|mjs)$/),
+    hd.dirRel(`.`),
   )
 
   async res(req) {

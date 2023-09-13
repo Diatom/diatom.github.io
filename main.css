@@ -36,7 +36,7 @@ header a {
   font-weight: bold;
   margin: 0;
   padding: 1.2em;
-  border-bottom: 2px solid hsla(0, 0%, 0%, 0);
+  border-bottom: 2px solid hsla(0deg, 0%, 0%, 0);
 }
 header a:hover {
   background-color: #e6f9ff;
@@ -112,12 +112,15 @@ article a[href] {
   html {
     margin-left: 0;
   }
+
   body {
     width: 100%;
   }
+
   main {
     flex-direction: column;
   }
+
   .page1 {
     flex-direction: column;
   }
